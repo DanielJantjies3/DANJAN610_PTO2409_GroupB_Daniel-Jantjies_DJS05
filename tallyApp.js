@@ -44,4 +44,6 @@ function counterReducer(state = { count: 0}, action) {
     }
 } 
 
+//Initialize Store
+const store = createStore(counterReducer);
 
