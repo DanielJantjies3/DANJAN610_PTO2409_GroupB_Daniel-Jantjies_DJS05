@@ -17,8 +17,8 @@ const dispatch = (action) => {
  //Subsricbe to State Changes
 const subscribe = (listener) => {
     listeners.push(listener);
-    return() => {
-        listeners = listeners.filter(1 => 1 !== listener);
+    return () => {
+  listeners = listeners.filter(l => l !== listener);
     };
 };
 
