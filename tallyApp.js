@@ -66,6 +66,9 @@ store.dispatch({ type: "ADD"});
 console.log("\nSCENARIO 3: Decrementing the Counter");
 store.dispatch({ type: "SUBTRACT"});
 
+//Scenario 4: Resetting the Counter
+console.log("\nSCENARIO 4: Resetting the Counter");
+store.dispatch({ type: "RESET"});
 
 
 
