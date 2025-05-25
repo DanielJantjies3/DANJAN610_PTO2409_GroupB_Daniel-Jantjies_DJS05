@@ -56,5 +56,15 @@ store.subscribe(() => console.log("State:" , store.getState()));
 console.log("SCENARIO 1: Initial State Verification");
 console.log("Initial State:", store.getState());
 
+//Scenario 2: Incrementing the Counter
+console.log("\nSCENARIO 2: Incrementing the Counter");
+store.dispatch({ type: "ADD"});
+store.dispatch({ type: "ADD"});
+
+
+
+
+
+
 
 
