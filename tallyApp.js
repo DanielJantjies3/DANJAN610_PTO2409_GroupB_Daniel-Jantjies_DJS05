@@ -7,7 +7,7 @@ function createStore(reducer) {
 //Get Current State
 const getState = () => state;
 
-//Subscribe Changes and Update State (Dispatch Function)
+//Dispatch Changes and Update State (Dispatch Function)
 const dispatch = (action) => {
     state = reducer (state, action);
     listeners.forEach(listener => listener());
