@@ -13,4 +13,18 @@ const dispatch = (action) => {
     listeners.forEach(listener => listener());
 };
 
+
+ //Subsricbe to State Changes
+const subscribe = (listener) => {
+    listeners.push(listener);
+    return() => {
+        listeners = listeners.filter(1 => 1 !== listener);
+    };
+};
+
+
+//Initialize
+dispatch({ type: '@@INNIT'});
+
+return {getState, dispatch, subscribe};
 }
