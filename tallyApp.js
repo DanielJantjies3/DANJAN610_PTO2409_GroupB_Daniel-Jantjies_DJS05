@@ -51,3 +51,10 @@ const store = createStore(counterReducer);
 //Log State Changes to Console
 store.subscribe(() => console.log("State:" , store.getState()));
 
+//Scenario 1: Initial State Verification
+
+console.log("SCENARIO 1: Initial State Verification");
+console.log("Initial State:", store.getState());
+
+
+
