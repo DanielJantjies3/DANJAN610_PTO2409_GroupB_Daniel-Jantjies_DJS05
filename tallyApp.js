@@ -47,3 +47,7 @@ function counterReducer(state = { count: 0}, action) {
 //Initialize Store
 const store = createStore(counterReducer);
 
+
+//Log State Changes to Console
+store.subscribe(() => console.log("State:" , store.getState()));
+
